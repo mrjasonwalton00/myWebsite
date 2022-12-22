@@ -1,60 +1,76 @@
 {% extends 'main.html' %}
 
 {% block content %}
+{% load static %}
+
+<!-- Links -->
+<a href="{% url 'page1' %}"> page 1</a>
+<a href="{% url 'page2' %}"> page 2</a>
+<a href="{% url 'page3' %}"> page 3</a>
 
 <!-- Title -->
 <div class="container p-5 my-5 rounded shadow-lg">
     <div class="row">
-        <div class="col">
+        <div class="col-9">
             <h1> Jason Walton </h1>
             <p> Central Connecticut State University </p>
-        </div>
-    </div>
-</div>
-
-<!-- Contact -->
-<div class="container p-5 my-5 rounded shadow-lg">
-    <div class="row">
-        <div class="col-4">
-            <p> Number </p>
-        </div>
-        <div class="col-4">
-            <p> Email </p>
-        </div>
-        <div class="col-4">
-            <p> Instagram </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <p> Twitter </p>
-        </div>
-        <div class="col-4">
-            <p> Adress</p>
-        </div>
-        <div class="col-4">
-            <p> Website </p>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Sections -->
-<div class="container">
-    <div class="row">  
-        <div class="col">
             <p> Contact </p>
             <p> Resume </p>
             <p> Relevent Coursework </p>
             <p> About Me </p>
         </div>
+        <div class="col">
+            <img src="{% static 'images/profile.PNG' %}" width="200px" style="border-radius: 100px;">
+        </div>
+            
     </div>
 </div>
 
-<a href="{% url 'page1' %}"> page 1</a>
-<a href="{% url 'page2' %}"> page 2</a>
-<a href="{% url 'page3' %}"> page 3</a>
+<!-- Contact Info -->
+<div class="container p-5 my-5 rounded shadow-lg text-center ">
+    <div class="row">
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Number </p>
+        </div>
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Email </p>
+        </div>
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Instagram </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Twitter </p>
+        </div>
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Adress</p>
+        </div>
+        <div class="col-4">
+            <p class = "rounded shadow-lg"> Website </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Relevant Coursework -->
+<div id = "coursework" style="height: 500px;" class="container p-5 rounded shadow-lg ">
+    <div class="row">
+        <div class="col">
+            <h1> Relvant Coursework </h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Me -->
+<div id = "about-me" style="height: 500px;" class="container p-5 rounded shadow-lg my-5">
+    <div class="row">
+        <div class="col">
+            <h1> About Me </h1>
+        </div>
+    </div>
+</div>
+
 
 
 
