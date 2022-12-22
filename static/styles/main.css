@@ -1,5 +1,15 @@
 body {
-    background-color: rgb(255, 175, 118);
-    color: blanchedalmond;
+    background-color: rgb(49, 5, 93) !important;
+    font-family: 'Inter', sans-serif !important;
 }
+
+
+h1 {
+    color: white;
+}
+
+p {
+    color: aliceblue;
+}
+
 
