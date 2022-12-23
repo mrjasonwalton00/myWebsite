@@ -3,24 +3,34 @@
 {% block content %}
 {% load static %}
 
-<!-- Links -->
-<a href="{% url 'page1' %}"> page 1</a>
-<a href="{% url 'page2' %}"> page 2</a>
-<a href="{% url 'page3' %}"> page 3</a>
 
-<!-- Title -->
-<div class="container p-5 my-5 rounded shadow-lg">
+
+<!-- Top -->
+<div class="container d-flex justify-content-center m-5 text-secondary">
     <div class="row">
-        <div class="col-9">
-            <h1> Jason Walton </h1>
-            <p> Central Connecticut State University </p>
-            <p> Contact </p>
-            <p> Resume </p>
-            <p> Relevent Coursework </p>
-            <p> About Me </p>
+        <div class="col">
+            <p> Discord </p>
         </div>
         <div class="col">
-            <img src="{% static 'images/profile.PNG' %}" width="200px" style="border-radius: 100px;">
+            <p> Github </p>
+        </div>
+        <div class="col">
+            <p> Blog </p>
+        </div>
+    </div>
+</div>
+
+<!-- Title -->
+<div class="container p-5 m-5 rounded shadow-lg">
+    <div class="row">
+        <div class="col-4 d-flex justify-content-center">
+            <img src="{% static 'images/profile.PNG' %}" width="150px" height="150px" style="border-radius: 100px;">
+        </div>
+        <div class="col">
+            <h1 style="font-size: 50px;"> Jason Walton </h1>
+            <p class = "text-secondary"> Central Connecticut State University </p>
+            <p> B.S Computer Science Honors </p>
+            <p> Cybersecurity Concentrartion </p>
         </div>
             
     </div>
@@ -52,6 +62,25 @@
     </div>
 </div>
 
+<!-- About Me -->
+<div id = "about-me" style="height: 500px;" class="container p-5 rounded shadow-lg my-5">
+    <div class="row">
+        <div class="col">
+            <h1> About Me </h1>
+        </div>
+    </div>
+</div>
+
+<!-- Projects -->
+<div id = "projects" style="height: 500px;" class="container p-5 rounded shadow-lg my-5">
+    <div class="row">
+        <div class="col">
+            <h1> Projects </h1>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- Relevant Coursework -->
 <div id = "coursework" style="height: 500px;" class="container p-5 rounded shadow-lg ">
@@ -62,14 +91,15 @@
     </div>
 </div>
 
-<!-- About Me -->
-<div id = "about-me" style="height: 500px;" class="container p-5 rounded shadow-lg my-5">
-    <div class="row">
-        <div class="col">
-            <h1> About Me </h1>
-        </div>
-    </div>
-</div>
+
+
+
+
+
+<!-- Links -->
+<a href="{% url 'page1' %}"> page 1</a>
+<a href="{% url 'page2' %}"> page 2</a>
+<a href="{% url 'page3' %}"> page 3</a>
 
 
 
