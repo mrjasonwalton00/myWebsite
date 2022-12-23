@@ -17,6 +17,14 @@ img {
     opacity: 75%;
 }
 
+h2 {
+    color: red !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 
 
 
