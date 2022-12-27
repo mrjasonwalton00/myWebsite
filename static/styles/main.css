@@ -5,6 +5,7 @@ body {
 }
 
 
+
 h1 {
     color: #fafafa;
 }
@@ -18,11 +19,12 @@ img {
 }
 
 h2 {
-    color: red !important;
+    color: blue !important;
 }
 
 a {
     text-decoration: none !important;
+    color: rgb(50, 50, 50) !important;
 }
 
 
