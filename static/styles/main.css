@@ -20,6 +20,27 @@ img {
     opacity: 75%;
 }
 
+#about-me {
+    background: #0e2431; 
+    transform:skewY(6deg);
+}
+
+/* This un slants the text in about me section */
+#about-me > * {
+    transform: skewY(-6deg);
+}
+
+
+#projects {
+    background: #f95959;
+    transform:skewY(6deg);
+}
+
+/* This un slants the text in projects section  */
+#projects > * {
+    transform: skewY(-6deg);
+}
+
 
 
 
