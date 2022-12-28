@@ -6,8 +6,10 @@ body {
 
 
 
+
 h1 {
     color: #fafafa;
+    font-weight: 700 !important;
 }
 
 .navbar .navbar-nav {
@@ -24,7 +26,10 @@ img {
 a {
     text-decoration: none !important;
     color: rgb(50, 50, 50) !important;
+    font-weight: 700 !important;
 }
+
+
 
 
 
