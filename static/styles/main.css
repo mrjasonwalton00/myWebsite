@@ -1,5 +1,4 @@
 body {
-
     background-color: #131415 !important;
     font-family: 'Inter', sans-serif !important;
 }
@@ -20,25 +19,27 @@ img {
     opacity: 75%;
 }
 
+
 #about-me {
-    background: #0e2431; 
-    transform:skewY(6deg);
+    background: rgba(14, 36, 49, .5);
+    transform:skewY(3deg);
+    margin-top: 100px;
 }
 
 /* This un slants the text in about me section */
 #about-me > * {
-    transform: skewY(-6deg);
+    transform: skewY(-3deg);
 }
 
 
 #projects {
-    background: #f95959;
-    transform:skewY(6deg);
+    background: rgba(252, 58, 81, 0.825);
+    transform:skewY(-3deg);
 }
 
 /* This un slants the text in projects section  */
 #projects > * {
-    transform: skewY(-6deg);
+    transform: skewY(3deg);
 }
 
 
@@ -49,6 +50,10 @@ a {
     color: rgb(50, 50, 50) !important;
     font-weight: 700 !important;
 }
+
+.card {
+    /* box-shadow: 0px 0px 50px rgba(0, 115, 255, 0.402);
+} */
 
 
 
